@@ -23,108 +23,128 @@
                     android:layout_width="350dp"
                     android:layout_marginTop="10dp"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="ФИО:"
-                        android:textSize="28dp"
+                        android:layout_height="wrap_content"
                         android:fontFamily="@font/mulish"
+                        android:text="ФИО:"
+                        android:textColor="#202124"
                         android:textFontWeight="600"
-                        android:layout_height="wrap_content"/>
+                        android:textSize="28dp" />
                     <Space
                         android:layout_width="8dp"
                         android:layout_height="wrap_content"/>
+
                     <TextView
                         android:id="@+id/tClientName"
                         android:layout_width="wrap_content"
-                        android:textSize="25dp"
-                        android:fontFamily="@font/mulish"
                         android:layout_height="wrap_content"
-                        tools:text="Попов Повов попович"/>
+                        android:fontFamily="@font/mulish"
+                        android:textColor="#3D3E43"
+                        android:textSize="25dp"
+                        tools:text="Попов Повов попович" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="350dp"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Номер:"
-                        android:textSize="28dp"
+                        android:layout_height="wrap_content"
                         android:fontFamily="@font/mulish"
+                        android:text="Номер:"
+                        android:textColor="#202124"
                         android:textFontWeight="600"
-                        android:layout_height="wrap_content"/>
+                        android:textSize="28dp" />
                     <Space
                         android:layout_width="8dp"
                         android:layout_height="wrap_content"/>
+
                     <TextView
                         android:id="@+id/tClientPhone"
                         android:layout_width="wrap_content"
-                        android:textSize="25dp"
-                        android:fontFamily="@font/mulish"
                         android:layout_height="wrap_content"
-                        tools:text="8999777555"/>
+                        android:fontFamily="@font/mulish"
+                        android:textColor="#3D3E43"
+                        android:textSize="25dp"
+                        tools:text="8999777555" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="350dp"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Дата:"
-                        android:textSize="28dp"
+                        android:layout_height="wrap_content"
                         android:fontFamily="@font/mulish"
+                        android:text="Дата:"
+                        android:textColor="#202124"
                         android:textFontWeight="600"
-                        android:layout_height="wrap_content"/>
+                        android:textSize="28dp" />
                     <Space
                         android:layout_width="8dp"
                         android:layout_height="wrap_content"/>
+
                     <TextView
                         android:id="@+id/tClientDate"
                         android:layout_width="wrap_content"
-                        android:textSize="25dp"
-                        android:fontFamily="@font/mulish"
                         android:layout_height="wrap_content"
-                        tools:text="22.11.2025"/>
+                        android:fontFamily="@font/mulish"
+                        android:textColor="#3D3E43"
+                        android:textSize="25dp"
+                        tools:text="22.11.2025" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="350dp"
                     android:layout_height="wrap_content">
+
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Статус:"
-                        android:textSize="28dp"
+                        android:layout_height="wrap_content"
                         android:fontFamily="@font/mulish"
+                        android:text="Статус:"
+                        android:textColor="#202124"
                         android:textFontWeight="600"
-                        android:layout_height="wrap_content"/>
+                        android:textSize="28dp" />
                     <Space
                         android:layout_width="8dp"
                         android:layout_height="wrap_content"/>
+
                     <TextView
                         android:id="@+id/tClientStatus"
                         android:layout_width="wrap_content"
-                        android:textSize="25dp"
-                        android:fontFamily="@font/mulish"
                         android:layout_height="wrap_content"
-                        tools:text="🟢 Открыто"/>
+                        android:fontFamily="@font/mulish"
+                        android:textColor="#3D3E43"
+                        android:textSize="25dp"
+                        tools:text="🟢 Открыто" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="350dp"
                     android:layout_marginBottom="10dp"
                     android:layout_height="100dp">
+
                     <TextView
                         android:layout_width="wrap_content"
-                        android:text="Причина:"
-                        android:textSize="28dp"
+                        android:layout_height="wrap_content"
                         android:fontFamily="@font/mulish"
+                        android:text="Причина:"
+                        android:textColor="#202124"
                         android:textFontWeight="600"
-                        android:layout_height="wrap_content"/>
+                        android:textSize="28dp" />
                     <Space
                         android:layout_width="8dp"
                         android:layout_height="wrap_content"/>
+
                     <TextView
                         android:id="@+id/tClientReason"
                         android:layout_width="match_parent"
-                        android:textSize="25dp"
-                        android:fontFamily="@font/mulish"
                         android:layout_height="wrap_content"
-                        tools:text="fdfgseyhrrtsапв  ывпраыеныенукеуккеыапвар ывен"/>
+                        android:fontFamily="@font/mulish"
+                        android:textColor="#3D3E43"
+                        android:textSize="25dp"
+                        tools:text="fdfgseyhrrtsапв  ывпраыеныенукеуккеыапвар ывен" />
                 </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -135,13 +155,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center">
+
                         <TextView
-                            android:textSize="30dp"
-                            android:fontFamily="@font/mulish"
-                            android:textFontWeight="600"
                             android:layout_width="wrap_content"
+                            android:fontFamily="@font/mulish"
                             android:text="⛽ Поменять статус"
-                            android:layout_height="wrap_content"/>
+                            android:textFontWeight="600"
+                            android:textSize="30dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="#202124" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -149,26 +171,30 @@
                         android:orientation="horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp">
+
                         <Button
                             android:id="@+id/bMakeOpen"
-                            android:text="Открыто"
                             android:layout_width="wrap_content"
-                            android:textSize="25dp"
+                            android:layout_height="wrap_content"
                             android:backgroundTint="#34A853"
                             android:fontFamily="@font/mulish"
-                            android:layout_height="wrap_content"/>
+                            android:text="Открыто"
+                            android:textColor="#F6FBFB"
+                            android:textSize="25dp" />
                         <Space
                             android:layout_width="70dp"
                             android:layout_height="wrap_content"/>
+
                         <Button
                             android:id="@+id/bMakeClose"
-                            android:text="Закрыто"
                             android:layout_width="wrap_content"
-                            android:textSize="25dp"
+                            android:layout_height="wrap_content"
                             android:width="200dp"
                             android:backgroundTint="#EA4335"
                             android:fontFamily="@font/mulish"
-                            android:layout_height="wrap_content"/>
+                            android:text="Закрыто"
+                            android:textColor="#F6FBFB"
+                            android:textSize="25dp" />
                     </LinearLayout>
                     <Space
                         android:layout_width="wrap_content"
@@ -179,27 +205,31 @@
                         android:orientation="horizontal"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp">
+
                         <Button
                             android:id="@+id/bMakeInProgress"
-                            android:text="В работе"
                             android:layout_width="wrap_content"
-                            android:textSize="25dp"
-
+                            android:layout_height="wrap_content"
                             android:backgroundTint="#FBBC04"
+
                             android:fontFamily="@font/mulish"
-                            android:layout_height="wrap_content"/>
+                            android:text="В работе"
+                            android:textColor="#F6FBFB"
+                            android:textSize="25dp" />
                         <Space
                             android:layout_width="70dp"
                             android:layout_height="wrap_content"/>
+
                         <Button
                             android:id="@+id/bMakeReady"
-                            android:text="Готово"
                             android:layout_width="wrap_content"
-                            android:textSize="25dp"
+                            android:layout_height="wrap_content"
                             android:width="200dp"
                             android:backgroundTint="#4285F4"
                             android:fontFamily="@font/mulish"
-                            android:layout_height="wrap_content"/>
+                            android:text="Готово"
+                            android:textColor="#F6FBFB"
+                            android:textSize="25dp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

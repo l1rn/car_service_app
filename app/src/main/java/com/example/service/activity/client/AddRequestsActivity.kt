@@ -20,19 +20,19 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.setPadding
 import androidx.lifecycle.lifecycleScope
 import com.example.service.R
 import com.example.service.SessionManager
 import com.example.service.database.AppDatabase
 import com.example.service.enums.Status
 import com.example.service.models.Requisition
-import com.example.service.models.User
 import kotlinx.coroutines.launch
 
 class AddRequestsActivity : AppCompatActivity() {
     private lateinit var db: AppDatabase
     private lateinit var adapter: AddRequestsAdapter
+    private lateinit var listView: ListView
+
     private var clientId: Int = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,8 +51,10 @@ class AddRequestsActivity : AppCompatActivity() {
             finish()
             return
         }
+
+
         adapter = AddRequestsAdapter(this)
-        val listView = findViewById<ListView>(R.id.lAllRequestsFromClient)
+        listView = findViewById<ListView>(R.id.lAllRequestsFromClient)
 
         loadAllRequests()
         backFromActivity()
@@ -65,6 +67,7 @@ class AddRequestsActivity : AppCompatActivity() {
         lifecycleScope.launch {
             val requests = db.requisitionDao().getAllRequestsById(clientId)
             adapter.submitList(requests)
+
         }
     }
 
@@ -91,6 +94,7 @@ class AddRequestsActivity : AppCompatActivity() {
             val reasonEditText = EditText(this).apply {
                 hint = "Введите причину"
                 inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_MULTI_LINE
+                maxLines = 2
                 layoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT
@@ -125,6 +129,7 @@ class AddRequestsActivity : AppCompatActivity() {
                     )
                     lifecycleScope.launch {
                         db.requisitionDao().insert(requisition)
+                        loadAllRequests()
                     }
                     Toast.makeText(this, "Заявка успешно создана!", Toast.LENGTH_SHORT).show()
                 }

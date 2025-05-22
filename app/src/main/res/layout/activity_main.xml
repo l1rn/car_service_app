@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,6 +14,7 @@
         android:gravity="start"
         android:layout_height="match_parent">
         <LinearLayout
+            android:background="#B48E7B"
             android:layout_width="match_parent"
             android:gravity="center"
             android:orientation="horizontal"
@@ -30,6 +32,7 @@
                 android:text=" Автосервис"
                 android:textSize="40dp"
                 android:textFontWeight="600"
+                android:textColor="#fff"
                 android:fontFamily="@font/mulish"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
@@ -37,6 +40,7 @@
             android:layout_width="match_parent"
             android:gravity="center"
             android:orientation="horizontal"
+            android:background="#F7F8FF"
             android:layout_height="100dp">
             <TextView
                 android:layout_width="wrap_content"
@@ -51,6 +55,7 @@
                 android:text="Вход в аккаунт"
                 android:textSize="40dp"
                 android:textFontWeight="600"
+                android:textColor="#202124"
                 android:fontFamily="@font/mulish"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
@@ -65,7 +70,7 @@
                 android:layout_height="300dp"
                 android:gravity="center"
                 android:orientation="vertical"
-
+                android:background="#F7F8FF"
                 android:padding="20dp">
 
                 <LinearLayout
@@ -80,6 +85,7 @@
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/mulish"
                         android:text="Номер телефона"
+                        android:textColor="#202124"
                         android:textSize="30dp" />
 
                     <Space
@@ -91,7 +97,9 @@
                         android:id="@+id/ePhone"
                         android:layout_width="250dp"
                         android:layout_height="wrap_content"
-                        android:hint="Введите номер" />
+                        android:hint="Введите номер"
+                        android:textColor="#202124"
+                        android:textColorHint="#79797A"/>
 
                     <Space
                         android:layout_width="match_parent"
@@ -104,8 +112,15 @@
                         android:backgroundTint="#4285F4"
                         android:fontFamily="@font/mulish"
                         android:text="Войти"
+                        android:textColor="#F0F5FF"
                         android:textSize="25dp" />
                 </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#F7F8FF"
+                android:layout_height="match_parent">
 
             </LinearLayout>
         </LinearLayout>

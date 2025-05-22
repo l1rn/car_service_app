@@ -10,6 +10,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="start"
+    android:background="#F7F8FF"
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,6 +32,7 @@
             android:layout_width="wrap_content"
             android:text="🧑‍🏭 Все заказы"
             android:textSize="40dp"
+            android:textColor="#202124"
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <LinearLayout

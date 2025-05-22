@@ -74,6 +74,7 @@ abstract class AppDatabase : RoomDatabase(){
             }
             if(db.requisitionDao().count() == 0){
                 val requests = listOf(
+                    Requisition(requestId = 1, userId = 2, status = Status.OPEN, date = "22.10.2025", reason = "Тормоза"),
                     Requisition(requestId = 2, userId = 2, status = Status.OPEN, date = "22.10.2025", reason = "Движок сломан"),
                     Requisition(requestId = 3, userId = 2, status = Status.READY, date = "23.10.2025", reason = "Коробка"),
                     Requisition(requestId = 4, userId = 2, status = Status.IN_PROGRESS, date = "24.10.2025", reason = "Шины"),
